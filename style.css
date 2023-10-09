@@ -1,0 +1,47 @@
+* {
+  font-family: monospace;
+}
+
+p1{
+  font-style: italic;
+  color:blue;
+  font-size: 100px;
+}
+p2{
+  font-style: normal;
+  color:red;
+  font-size: 50px;
+}
+body{
+  background-image: url("images/cursedwateringcan.png");
+  background-repeat: repeat;
+}
+
+div{
+  text-align: center;
+  vertical-align: middle; 
+}
+
+#insaneDiv{
+  background-color:ghostwhite;
+  padding: 20px;
+  margin: 60px;
+}
+
+@keyframes example {
+  0%   {left:50px; top:50px; transform: rotate(0deg);}
+  10%  {left:200px; top:50px; transform: rotate(90deg);}
+  50%  {left:200px; top:200px; transform: rotate(180deg);}
+  60%  {left:50px; top:200px; transform: rotate(270deg);}
+  100% {left:50px; top:50px; transform: rotate(360deg);}
+}
+#animatedDiv{
+  width:200px;
+  height:150px;
+  position: absolute;
+  background-color: rgb(25, 255, 255);
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
